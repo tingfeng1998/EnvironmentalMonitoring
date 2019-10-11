@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Environment>
+	<Gather class="client.GatherImpl">
+		<!--读取文件的路径 -->
+		<path>src/main/resources/radwtmp</path>
+		<!-- <backup>src/main/java/backup</backup> -->
+	</Gather>
+
+	<Client class="client.ClientImpl">
+		<ip>127.0.0.1</ip>
+		<port>10000</port>
+	</Client>
+
+	<Server class="server.ServerImpl">
+		<port>10000</port>
+	</Server>
+
+	<DBStore class="server.DBStoreImpl">
+		<batchSize>1000</batchSize>
+	</DBStore>
+
+ <!-- 	<Log class="util.LogImpl">
+		<log4j-properties>
+			src/main/java/log4j.properties
+		</log4j-properties>
+	</Log> -->
+</Environment>
